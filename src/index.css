@@ -1,0 +1,32 @@
+@import "tailwindcss";
+@config "../tailwind.config.ts";
+
+html,
+body,
+#root {
+  min-height: 100dvh;
+  background: #0a0c12;
+}
+
+body {
+  margin: 0;
+}
+
+@keyframes page-fade {
+  from {
+    opacity: 0.35;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.page-fade {
+  animation: page-fade 180ms ease-out;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .page-fade {
+    animation: none;
+  }
+}

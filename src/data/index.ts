@@ -1,0 +1,1 @@
+export { comic } from "./comic";
